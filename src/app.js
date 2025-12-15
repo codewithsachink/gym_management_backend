@@ -52,15 +52,15 @@ const attendanceRoutes = require('./routes/attendanceRoutes');
 
 // Mount routes
 app.use('/api/v1/auth', authRoutes);
-app.use('/api/v1/branches', branchRoutes);
+app.use('/api/v1/branches', branchRoutes);// done 
 app.use('/api/v1/staff', staffRoutes);
-app.use('/api/v1/staff-roles', staffRoleRoutes);
+app.use('/api/v1/staff-roles', staffRoleRoutes);//
 app.use('/api/v1/members', memberRoutes);
 app.use('/api/v1/plans', planRoutes);
 app.use('/api/v1/classes', classScheduleRoutes);
 app.use('/api/v1/groups', groupRoutes);
 app.use('/api/v1/branch-plans', branchPlanRoutes);
-app.use('/api/v1/attendance', attendanceRoutes);
+app.use('/api/v1/attendance', attendanceRoutes);//
 
 // ✅ Health check routes
 app.get('/health', (req, res) => {

@@ -50,6 +50,7 @@ class AuthController {
       });
     }
   }
+  
 
   async forgotPassword(req, res) {
     try {
